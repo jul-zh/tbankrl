@@ -1,0 +1,32 @@
+{
+  "format_version": 1,
+  "overall_minutes": 230,
+  "evaluation_reserve_minutes": 20,
+  "checkpoint_minutes": 2,
+  "seed": 42,
+  "relevance_fraction": 0.95,
+  "sft": {
+    "name": "sft",
+    "max_steps": 200000,
+    "max_minutes": 50,
+    "learning_rate": 0.00003,
+    "min_learning_rate": 0.000003,
+    "batch_size": 64,
+    "eval_every": 2000
+  },
+  "rl": [
+    {"name": "rl_long_0", "beta": 0.0, "horizon": 1},
+    {"name": "rl_long_kl", "beta": 0.3, "horizon": 1},
+    {"name": "rl_long_h5", "beta": 0.3, "horizon": 5}
+  ],
+  "rl_defaults": {
+    "max_steps": 100000,
+    "max_minutes": 45,
+    "learning_rate": 0.000003,
+    "min_learning_rate": 0.0000003,
+    "batch_size": 32,
+    "eval_every": 2000,
+    "gamma": 0.95,
+    "repeat_penalty": 0.0
+  }
+}

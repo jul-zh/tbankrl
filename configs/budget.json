@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "context": 32,
+  "min_train_events": 5,
+  "max_users": 50000,
+  "max_train_examples": 500000,
+  "max_eval_users": 5000,
+  "train_fraction": 0.8,
+  "validation_fraction": 0.1,
+  "model": {"hidden": 128, "layers": 2, "heads": 4, "dropout": 0.1},
+  "sft": {"batch_size": 64, "learning_rate": 0.0003, "max_steps": 12000, "max_minutes": 90, "eval_every": 500},
+  "rm": {"batch_size": 256, "learning_rate": 0.001, "max_steps": 6000, "max_minutes": 35, "eval_every": 500},
+  "rl": {"batch_size": 32, "learning_rate": 0.00001, "max_steps": 1000, "max_minutes": 15, "eval_every": 250, "gamma": 0.95},
+  "checkpoint_minutes": 10,
+  "eval_batch_size": 64,
+  "validation_train_limit": 1000
+}

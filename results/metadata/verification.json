@@ -1,0 +1,11 @@
+{
+  "n_users": 5000,
+  "evaluated_variants": 18,
+  "metric_arrays_checked": 34,
+  "paired_bootstrap_intervals_checked": 84,
+  "source_code_identity_verified": true,
+  "all_primary_runs_present": true,
+  "row_order_consistent_within_split": true,
+  "validation_and_test_differ": true,
+  "no_source_ids_or_histories_in_metric_arrays": true
+}

@@ -1,0 +1,95 @@
+{
+  "format_version": 1,
+  "seed": 42,
+  "overall_minutes": 120,
+  "evaluation_reserve_minutes": 30,
+  "checkpoint_minutes": 1,
+  "relevance_fraction": 1.0,
+  "selection_fractions": [
+    1.0,
+    0.99,
+    0.98,
+    0.95
+  ],
+  "expected_sft_sha256": "10f4781991b1187fcaf7abf68ab2a2437f3787192eb645aa9fa2342ea6479185",
+  "expected_manifest_sha256": "30b330a02e6a26299f3dbda7a7bad18a8d0b914432d4287c253666ce0b389c3c",
+  "rerank_lambdas": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "training": {
+    "batch_size": 32,
+    "learning_rate": 3e-06,
+    "max_steps": 2500,
+    "max_minutes": 12,
+    "eval_every": 100,
+    "gamma": 0.95,
+    "beta": 0.3,
+    "horizon": 1,
+    "repeat_penalty": 0.0,
+    "ce_weight": 0.0,
+    "baseline_mode": "ema",
+    "group_size": 1,
+    "reinforce_weight": 0.0
+  },
+  "pilot_branches": [
+    {
+      "name": "pilot_ce03",
+      "ce_weight": 0.3
+    },
+    {
+      "name": "pilot_ce10",
+      "ce_weight": 1.0
+    }
+  ],
+  "branches": [
+    {
+      "name": "ce03_s42",
+      "family": "ce03",
+      "seed": 42,
+      "ce_weight": 0.3,
+      "reference_branch": "anchor03_s42"
+    },
+    {
+      "name": "ce10_s42",
+      "family": "ce10",
+      "seed": 42,
+      "ce_weight": 1.0,
+      "reference_branch": "anchor10_s42"
+    },
+    {
+      "name": "ce03_s123",
+      "family": "ce03",
+      "seed": 123,
+      "ce_weight": 0.3,
+      "reference_branch": "anchor03_s123"
+    },
+    {
+      "name": "ce10_s123",
+      "family": "ce10",
+      "seed": 123,
+      "ce_weight": 1.0,
+      "reference_branch": "anchor10_s123"
+    },
+    {
+      "name": "ce03_s2026",
+      "family": "ce03",
+      "seed": 2026,
+      "ce_weight": 0.3,
+      "reference_branch": "anchor03_s2026"
+    },
+    {
+      "name": "ce10_s2026",
+      "family": "ce10",
+      "seed": 2026,
+      "ce_weight": 1.0,
+      "reference_branch": "anchor10_s2026"
+    }
+  ]
+}

@@ -1,0 +1,1736 @@
+{
+  "test/sft": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "08e6184c0fdab9efe8c50daf5ee3a7ac64d7ddf7f71aed1f6f3fdb6f89be9c53",
+    "curated_array_sha256": "b27ea3821aaa996452074cb73e20a10304b5919c6c07b8a0ecb97500a4061f5f",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1764,
+        "ndcg@10": 0.10457771048469654,
+        "recall@20": 0.2276,
+        "ndcg@20": 0.1175827656558347
+      },
+      "rm_reward@10": 0.5673024654388428,
+      "behavior@10": {
+        "coverage": 0.06403063496304212,
+        "exposure_gini": 0.9928728399679402,
+        "top_1pct_popular_share": 0.78662,
+        "seen_fraction": 0.08474,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17437.1486,
+        "adjacent_user_overlap": 0.3358471694338868
+      },
+      "synthetic_rollout_5": [
+        {
+          "rm_reward": 0.5774663090705872,
+          "kl": 0.0,
+          "seen_in_initial_context": 0.032600000500679016,
+          "repeat_within_rollout": 0.0
+        },
+        {
+          "rm_reward": 0.5789272785186768,
+          "kl": 0.0,
+          "seen_in_initial_context": 0.02879999950528145,
+          "repeat_within_rollout": 0.010599999688565731
+        },
+        {
+          "rm_reward": 0.5798700451850891,
+          "kl": 0.0,
+          "seen_in_initial_context": 0.024800000712275505,
+          "repeat_within_rollout": 0.013000000268220901
+        },
+        {
+          "rm_reward": 0.5800619125366211,
+          "kl": 0.0,
+          "seen_in_initial_context": 0.025200000032782555,
+          "repeat_within_rollout": 0.019600000232458115
+        },
+        {
+          "rm_reward": 0.5736772418022156,
+          "kl": 0.0,
+          "seen_in_initial_context": 0.02239999920129776,
+          "repeat_within_rollout": 0.02419999986886978
+        }
+      ],
+      "rollout_note": "Sampled recommendations are appended as fictitious interactions; this is not observed user return.",
+      "real_vs_synthetic_context": {
+        "n_users": 192,
+        "note": "Survivor cohort with five eligible real prefixes; not a causal comparison. Ties/OOV can create gaps between eligible targets.",
+        "real_prefixes": [
+          {
+            "rm_reward": 0.5955665707588196,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.015625
+          },
+          {
+            "rm_reward": 0.6008965373039246,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.0364583320915699
+          },
+          {
+            "rm_reward": 0.578455924987793,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.02083333395421505
+          },
+          {
+            "rm_reward": 0.5941923260688782,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.02604166604578495
+          },
+          {
+            "rm_reward": 0.6011841893196106,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.0520833320915699
+          }
+        ],
+        "synthetic_prefixes": [
+          {
+            "rm_reward": 0.5955665707588196,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.015625
+          },
+          {
+            "rm_reward": 0.6165094375610352,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.0364583320915699
+          },
+          {
+            "rm_reward": 0.5725600123405457,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.02604166604578495
+          },
+          {
+            "rm_reward": 0.6052188873291016,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.0364583320915699
+          },
+          {
+            "rm_reward": 0.5892356038093567,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.0625
+          }
+        ]
+      },
+      "checkpoint_step": 45612,
+      "source_checkpoint_sha256": "10f4781991b1187fcaf7abf68ab2a2437f3787192eb645aa9fa2342ea6479185",
+      "elapsed_seconds": 9.652410274999966
+    }
+  },
+  "test/rl_ce03_selected_s42": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "dd183d41f7e700a249c5589ff964a89c4370133af3b858b410dc281ad397386c",
+    "curated_array_sha256": "2b8c5af0b0402e4791e6175a18b2fddb17a0f3e68daab2301ff8b81d5f023d47",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1754,
+        "ndcg@10": 0.1035396812864848,
+        "recall@20": 0.2282,
+        "ndcg@20": 0.11686777663032953
+      },
+      "rm_reward@10": 0.5862746834754944,
+      "behavior@10": {
+        "coverage": 0.06438685546353193,
+        "exposure_gini": 0.9927710072134651,
+        "top_1pct_popular_share": 0.78562,
+        "seen_fraction": 0.0872,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17456.6239,
+        "adjacent_user_overlap": 0.33526705341068214
+      },
+      "synthetic_rollout_5": [
+        {
+          "rm_reward": 0.5894723534584045,
+          "kl": 0.006474872585386038,
+          "seen_in_initial_context": 0.03139999881386757,
+          "repeat_within_rollout": 0.0
+        },
+        {
+          "rm_reward": 0.5920290350914001,
+          "kl": 0.006055896636098623,
+          "seen_in_initial_context": 0.029999999329447746,
+          "repeat_within_rollout": 0.009399999864399433
+        },
+        {
+          "rm_reward": 0.5912591814994812,
+          "kl": 0.005897029768675566,
+          "seen_in_initial_context": 0.02459999918937683,
+          "repeat_within_rollout": 0.014000000432133675
+        },
+        {
+          "rm_reward": 0.5919180512428284,
+          "kl": 0.005697579588741064,
+          "seen_in_initial_context": 0.025599999353289604,
+          "repeat_within_rollout": 0.018799999728798866
+        },
+        {
+          "rm_reward": 0.5857211947441101,
+          "kl": 0.005535151343792677,
+          "seen_in_initial_context": 0.023000000044703484,
+          "repeat_within_rollout": 0.02280000038444996
+        }
+      ],
+      "rollout_note": "Sampled recommendations are appended as fictitious interactions; this is not observed user return.",
+      "real_vs_synthetic_context": {
+        "n_users": 192,
+        "note": "Survivor cohort with five eligible real prefixes; not a causal comparison. Ties/OOV can create gaps between eligible targets.",
+        "real_prefixes": [
+          {
+            "rm_reward": 0.6011080741882324,
+            "kl": 0.004957942292094231,
+            "seen_in_initial_context": 0.015625
+          },
+          {
+            "rm_reward": 0.6109428405761719,
+            "kl": 0.004488917533308268,
+            "seen_in_initial_context": 0.0364583320915699
+          },
+          {
+            "rm_reward": 0.5935818552970886,
+            "kl": 0.004413474816828966,
+            "seen_in_initial_context": 0.02604166604578495
+          },
+          {
+            "rm_reward": 0.6001343727111816,
+            "kl": 0.004292184486985207,
+            "seen_in_initial_context": 0.02083333395421505
+          },
+          {
+            "rm_reward": 0.6057615280151367,
+            "kl": 0.004226830787956715,
+            "seen_in_initial_context": 0.0520833320915699
+          }
+        ],
+        "synthetic_prefixes": [
+          {
+            "rm_reward": 0.6011080741882324,
+            "kl": 0.004957942292094231,
+            "seen_in_initial_context": 0.015625
+          },
+          {
+            "rm_reward": 0.6245241165161133,
+            "kl": 0.004568833392113447,
+            "seen_in_initial_context": 0.0416666679084301
+          },
+          {
+            "rm_reward": 0.5899715423583984,
+            "kl": 0.004379661753773689,
+            "seen_in_initial_context": 0.015625
+          },
+          {
+            "rm_reward": 0.6079778671264648,
+            "kl": 0.004351588431745768,
+            "seen_in_initial_context": 0.0364583320915699
+          },
+          {
+            "rm_reward": 0.5994596481323242,
+            "kl": 0.004309100564569235,
+            "seen_in_initial_context": 0.0572916679084301
+          }
+        ]
+      },
+      "checkpoint_step": 2300,
+      "source_checkpoint_sha256": "edf5dc250a80e0c8a9750058e426d2ad78aba9ddc2379d7a7d2df2a97f426d18",
+      "elapsed_seconds": 9.250618777999989
+    }
+  },
+  "test/rl_ce03_selected_s123": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "2b44ce3552462bd1e421f26853fa3dd0a2a94c7f46d6c63500f8c7ae4e55f6aa",
+    "curated_array_sha256": "5fa1a245a8032a8a0eac244159830547225560d886d7dad0cdbd4bf3c8082851",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1754,
+        "ndcg@10": 0.10354284111630614,
+        "recall@20": 0.229,
+        "ndcg@20": 0.11706442994637868
+      },
+      "rm_reward@10": 0.5867060422897339,
+      "behavior@10": {
+        "coverage": 0.06429780033840947,
+        "exposure_gini": 0.992826210704426,
+        "top_1pct_popular_share": 0.78822,
+        "seen_fraction": 0.08752,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17541.33348,
+        "adjacent_user_overlap": 0.337747549509902
+      },
+      "synthetic_rollout_5": [
+        {
+          "rm_reward": 0.5899465680122375,
+          "kl": 0.006898458115756512,
+          "seen_in_initial_context": 0.031199999153614044,
+          "repeat_within_rollout": 0.0
+        },
+        {
+          "rm_reward": 0.592155396938324,
+          "kl": 0.006567067001014948,
+          "seen_in_initial_context": 0.02979999966919422,
+          "repeat_within_rollout": 0.009200000204145908
+        },
+        {
+          "rm_reward": 0.5909458994865417,
+          "kl": 0.006426706910133362,
+          "seen_in_initial_context": 0.02419999986886978,
+          "repeat_within_rollout": 0.014399999752640724
+        },
+        {
+          "rm_reward": 0.5919403433799744,
+          "kl": 0.006238266360014677,
+          "seen_in_initial_context": 0.026200000196695328,
+          "repeat_within_rollout": 0.019200000911951065
+        },
+        {
+          "rm_reward": 0.5854036808013916,
+          "kl": 0.006108250468969345,
+          "seen_in_initial_context": 0.023399999365210533,
+          "repeat_within_rollout": 0.023399999365210533
+        }
+      ],
+      "rollout_note": "Sampled recommendations are appended as fictitious interactions; this is not observed user return.",
+      "real_vs_synthetic_context": {
+        "n_users": 192,
+        "note": "Survivor cohort with five eligible real prefixes; not a causal comparison. Ties/OOV can create gaps between eligible targets.",
+        "real_prefixes": [
+          {
+            "rm_reward": 0.6001569628715515,
+            "kl": 0.0053282384760677814,
+            "seen_in_initial_context": 0.015625
+          },
+          {
+            "rm_reward": 0.6103591918945312,
+            "kl": 0.004825935233384371,
+            "seen_in_initial_context": 0.0364583320915699
+          },
+          {
+            "rm_reward": 0.5934979319572449,
+            "kl": 0.004842682275921106,
+            "seen_in_initial_context": 0.02604166604578495
+          },
+          {
+            "rm_reward": 0.6007790565490723,
+            "kl": 0.004708399996161461,
+            "seen_in_initial_context": 0.02083333395421505
+          },
+          {
+            "rm_reward": 0.604762077331543,
+            "kl": 0.004746058490127325,
+            "seen_in_initial_context": 0.046875
+          }
+        ],
+        "synthetic_prefixes": [
+          {
+            "rm_reward": 0.6001569628715515,
+            "kl": 0.0053282384760677814,
+            "seen_in_initial_context": 0.015625
+          },
+          {
+            "rm_reward": 0.6243460774421692,
+            "kl": 0.00496469484642148,
+            "seen_in_initial_context": 0.0364583320915699
+          },
+          {
+            "rm_reward": 0.5910523533821106,
+            "kl": 0.004829176235944033,
+            "seen_in_initial_context": 0.010416666977107525
+          },
+          {
+            "rm_reward": 0.6087179183959961,
+            "kl": 0.004832711536437273,
+            "seen_in_initial_context": 0.0364583320915699
+          },
+          {
+            "rm_reward": 0.5964288711547852,
+            "kl": 0.004717924166470766,
+            "seen_in_initial_context": 0.0572916679084301
+          }
+        ]
+      },
+      "checkpoint_step": 2400,
+      "source_checkpoint_sha256": "6e3ed3d90fcea5c9af5b56b7156ff7acd2438f3ac2542a2567070bae878379ee",
+      "elapsed_seconds": 9.283121146000212
+    }
+  },
+  "test/rl_ce03_selected_s2026": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "356c5cb1768393dfabe895ae163e37f514b144ed82f6a6db62015a000268ee93",
+    "curated_array_sha256": "fe970ca4870e1cee7cddd874e4f3d465673711506ee5352859eb7799811b2e8b",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.176,
+        "ndcg@10": 0.10419358421472034,
+        "recall@20": 0.2282,
+        "ndcg@20": 0.11740375926814045
+      },
+      "rm_reward@10": 0.5813832879066467,
+      "behavior@10": {
+        "coverage": 0.06358535933742987,
+        "exposure_gini": 0.9928589794282661,
+        "top_1pct_popular_share": 0.78824,
+        "seen_fraction": 0.0873,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17544.13026,
+        "adjacent_user_overlap": 0.33756751350270053
+      },
+      "synthetic_rollout_5": [
+        {
+          "rm_reward": 0.5866599678993225,
+          "kl": 0.004284360911697149,
+          "seen_in_initial_context": 0.03180000185966492,
+          "repeat_within_rollout": 0.0
+        },
+        {
+          "rm_reward": 0.5892606973648071,
+          "kl": 0.003979649860411882,
+          "seen_in_initial_context": 0.029600000008940697,
+          "repeat_within_rollout": 0.009800000116229057
+        },
+        {
+          "rm_reward": 0.5888525247573853,
+          "kl": 0.0038578826934099197,
+          "seen_in_initial_context": 0.024399999529123306,
+          "repeat_within_rollout": 0.0142000000923872
+        },
+        {
+          "rm_reward": 0.5887801647186279,
+          "kl": 0.003723320784047246,
+          "seen_in_initial_context": 0.026000000536441803,
+          "repeat_within_rollout": 0.019600000232458115
+        },
+        {
+          "rm_reward": 0.5831570029258728,
+          "kl": 0.003608704311773181,
+          "seen_in_initial_context": 0.023600000888109207,
+          "repeat_within_rollout": 0.02459999918937683
+        }
+      ],
+      "rollout_note": "Sampled recommendations are appended as fictitious interactions; this is not observed user return.",
+      "real_vs_synthetic_context": {
+        "n_users": 192,
+        "note": "Survivor cohort with five eligible real prefixes; not a causal comparison. Ties/OOV can create gaps between eligible targets.",
+        "real_prefixes": [
+          {
+            "rm_reward": 0.6009427905082703,
+            "kl": 0.003349252277985215,
+            "seen_in_initial_context": 0.015625
+          },
+          {
+            "rm_reward": 0.6109428405761719,
+            "kl": 0.0030426494777202606,
+            "seen_in_initial_context": 0.0364583320915699
+          },
+          {
+            "rm_reward": 0.5940637588500977,
+            "kl": 0.0030089926440268755,
+            "seen_in_initial_context": 0.02604166604578495
+          },
+          {
+            "rm_reward": 0.6010206341743469,
+            "kl": 0.002961348509415984,
+            "seen_in_initial_context": 0.02604166604578495
+          },
+          {
+            "rm_reward": 0.6039330363273621,
+            "kl": 0.0029733597766608,
+            "seen_in_initial_context": 0.0520833320915699
+          }
+        ],
+        "synthetic_prefixes": [
+          {
+            "rm_reward": 0.6009427905082703,
+            "kl": 0.003349252277985215,
+            "seen_in_initial_context": 0.015625
+          },
+          {
+            "rm_reward": 0.6209738850593567,
+            "kl": 0.0030652147252112627,
+            "seen_in_initial_context": 0.0416666679084301
+          },
+          {
+            "rm_reward": 0.5918862223625183,
+            "kl": 0.0029276541899889708,
+            "seen_in_initial_context": 0.015625
+          },
+          {
+            "rm_reward": 0.6055619120597839,
+            "kl": 0.0028783113230019808,
+            "seen_in_initial_context": 0.0416666679084301
+          },
+          {
+            "rm_reward": 0.5961200594902039,
+            "kl": 0.002851569326594472,
+            "seen_in_initial_context": 0.0572916679084301
+          }
+        ]
+      },
+      "checkpoint_step": 1500,
+      "source_checkpoint_sha256": "628f35137c14e19c4dd1ab13b85c4d86d944eddac0d35a849d2e1a4ae9d0c112",
+      "elapsed_seconds": 9.242058914999916
+    }
+  },
+  "test/rl_ce03_fixed_s42": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "54fdd86b1b095164c479a0aefde0e9094039312bfc282e2c6345fbf38b2ac84a",
+    "curated_array_sha256": "c897bb4ff6cb58ea52ce17652dd7cb2bc4d4d0e2a65a72d4e703f897c3348d2f",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1748,
+        "ndcg@10": 0.10318574695690322,
+        "recall@20": 0.2282,
+        "ndcg@20": 0.11667977715332106
+      },
+      "rm_reward@10": 0.5870054960250854,
+      "behavior@10": {
+        "coverage": 0.06438685546353193,
+        "exposure_gini": 0.9928195493810669,
+        "top_1pct_popular_share": 0.78728,
+        "seen_fraction": 0.08724,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17509.10634,
+        "adjacent_user_overlap": 0.3368273654730946
+      },
+      "checkpoint_step": 2500,
+      "source_checkpoint_sha256": "aee8c2761b95dfc4d6d38d8320ea1cfd43d9b6bd016429e497447c688f2c0178",
+      "elapsed_seconds": 5.8435248410000895
+    }
+  },
+  "test/rl_ce03_fixed_s123": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "f60f9947d7fd6d29551a072194f607a92d2b77ac5b5981b42ba895846f9f8b8b",
+    "curated_array_sha256": "e4245d3c43dbfed70ce7dd5d2cd78749702fd213d750779ff9557b7afc202cd8",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1756,
+        "ndcg@10": 0.10370630644238818,
+        "recall@20": 0.2298,
+        "ndcg@20": 0.11736633048478189
+      },
+      "rm_reward@10": 0.5868470668792725,
+      "behavior@10": {
+        "coverage": 0.06429780033840947,
+        "exposure_gini": 0.9928431668002493,
+        "top_1pct_popular_share": 0.78832,
+        "seen_fraction": 0.08738,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17549.1968,
+        "adjacent_user_overlap": 0.337627525505101
+      },
+      "checkpoint_step": 2500,
+      "source_checkpoint_sha256": "20a55f2aeae83f2629f6df92c46831dd9ca784161642380ddc4cf0eb62a55623",
+      "elapsed_seconds": 5.926773709000145
+    }
+  },
+  "test/rl_ce03_fixed_s2026": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "611a1a3e3cf08deb728f6e1dd7c0c01a93a1ef1d3272605dce361308ffbff4c9",
+    "curated_array_sha256": "0eb208307d4b7b56728017bcadf23365340a246aaf47021df630bf61abd5f748",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1758,
+        "ndcg@10": 0.1035897156639332,
+        "recall@20": 0.229,
+        "ndcg@20": 0.11701042966104365
+      },
+      "rm_reward@10": 0.5872405171394348,
+      "behavior@10": {
+        "coverage": 0.06314008371181762,
+        "exposure_gini": 0.9928632184522219,
+        "top_1pct_popular_share": 0.78802,
+        "seen_fraction": 0.0874,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17527.12748,
+        "adjacent_user_overlap": 0.33660732146429284
+      },
+      "checkpoint_step": 2500,
+      "source_checkpoint_sha256": "80c9799acfb29ce5bded060a97c85c75a935953a9a3e78594fd16028a28daa46",
+      "elapsed_seconds": 5.827222915999982
+    }
+  },
+  "test/ce03_fixed_s42": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "7fbda9f8c389792f02071924a4376d5e870fbc5d8a3caec45b0718ba7ebfa3f6",
+    "curated_array_sha256": "539983fd5c2fddf9614afe37847f6bcb7fc545f6e5d0354e8dfebe61ab80d80c",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1786,
+        "ndcg@10": 0.10559604620542677,
+        "recall@20": 0.2278,
+        "ndcg@20": 0.1180900351501576
+      },
+      "rm_reward@10": 0.5651200413703918,
+      "behavior@10": {
+        "coverage": 0.06447591058865437,
+        "exposure_gini": 0.9929297853771485,
+        "top_1pct_popular_share": 0.78666,
+        "seen_fraction": 0.08286,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17368.13996,
+        "adjacent_user_overlap": 0.3345869173834767
+      },
+      "checkpoint_step": 2500,
+      "source_checkpoint_sha256": "d1f74541f7280b30cbd231dccd1200c787da1647691d4e9afd36e97d9e6186eb",
+      "elapsed_seconds": 5.922906596000075
+    }
+  },
+  "test/rl_ce10_fixed_s42": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "7ee5eb09507a44299c691a4188d83e16b302fbd51e05c9000f479d900a076dd0",
+    "curated_array_sha256": "1e4220738d2fdcaf6189d895cfd58e07ddc781d9b89869d24f5ab3c14d73bb2b",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1766,
+        "ndcg@10": 0.1044432616380473,
+        "recall@20": 0.229,
+        "ndcg@20": 0.11771425590338849
+      },
+      "rm_reward@10": 0.5732489228248596,
+      "behavior@10": {
+        "coverage": 0.06492118621426664,
+        "exposure_gini": 0.9928380016029923,
+        "top_1pct_popular_share": 0.78532,
+        "seen_fraction": 0.08442,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17365.8176,
+        "adjacent_user_overlap": 0.3333266653330666
+      },
+      "checkpoint_step": 2500,
+      "source_checkpoint_sha256": "0c115ed8efcb5faaba7db900cdc239a82105311476dfd0d627a5e6df219298d3",
+      "elapsed_seconds": 5.786717284000133
+    }
+  },
+  "test/rl_ce10_fixed_s123": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "b855f7454f83b45c48555fcfc8cc6da6ed36a473380169b262c161830bfe7535",
+    "curated_array_sha256": "adaba0c54f229bb0263cca180cfa2d0ea62b57d16aa80f252668e6dacfcb68ad",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1766,
+        "ndcg@10": 0.1047795001921375,
+        "recall@20": 0.2294,
+        "ndcg@20": 0.11814804457078319
+      },
+      "rm_reward@10": 0.5735390782356262,
+      "behavior@10": {
+        "coverage": 0.06447591058865437,
+        "exposure_gini": 0.9928826395939087,
+        "top_1pct_popular_share": 0.78654,
+        "seen_fraction": 0.08484,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17395.08744,
+        "adjacent_user_overlap": 0.3342068413682736
+      },
+      "checkpoint_step": 2500,
+      "source_checkpoint_sha256": "8eb22bdfbc539e8460b64be2239d3762e3d74cb4dd656e259207d2ffa6a83ac3",
+      "elapsed_seconds": 5.8071870839999065
+    }
+  },
+  "test/rl_ce10_fixed_s2026": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "4080a237e3099f9a917c0193b9b283800484ed6adb6ac415b045376127e31590",
+    "curated_array_sha256": "2afc805fdb5966c9e31b8ec2714fb4b47bf021a50920a6e777e405c6e32bdeb2",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1768,
+        "ndcg@10": 0.104561976535364,
+        "recall@20": 0.23,
+        "ndcg@20": 0.11801907988736753
+      },
+      "rm_reward@10": 0.5734941363334656,
+      "behavior@10": {
+        "coverage": 0.06411969008816458,
+        "exposure_gini": 0.9929066452934366,
+        "top_1pct_popular_share": 0.7878,
+        "seen_fraction": 0.08462,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17430.80608,
+        "adjacent_user_overlap": 0.3345669133826765
+      },
+      "checkpoint_step": 2500,
+      "source_checkpoint_sha256": "13074dfd1e20624d40741a8cb06990e7cd81ceaa341e7c901fcde1fcb85f7089",
+      "elapsed_seconds": 5.801929108999957
+    }
+  },
+  "test/rl_control_fixed_s42": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "bb7e8e939d9789846ed5482b519ef37890849f9b00a98f67ad1730a2545e6d19",
+    "curated_array_sha256": "6ab49865c6f5ca9ff7a8cd09cfffc11b0b7a41eb5bb70b7893fcda99fbcda4bf",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1718,
+        "ndcg@10": 0.10084692399851007,
+        "recall@20": 0.225,
+        "ndcg@20": 0.11431495667823752
+      },
+      "rm_reward@10": 0.6058976650238037,
+      "behavior@10": {
+        "coverage": 0.061180870959123695,
+        "exposure_gini": 0.9930089518211773,
+        "top_1pct_popular_share": 0.79348,
+        "seen_fraction": 0.09374,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17824.52286,
+        "adjacent_user_overlap": 0.3462892578515703
+      },
+      "checkpoint_step": 2500,
+      "source_checkpoint_sha256": "0bac6cb8fd3cf13dd043e1c8bfaabdd50d9ead84f113322ef0c92c6c5c914253",
+      "elapsed_seconds": 5.799587349999911
+    }
+  },
+  "test/rl_control_fixed_s123": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "f3d8b4e91dd4495ed50045705702910d901faf2f9aff8127297dc9b8b3f3b8a1",
+    "curated_array_sha256": "fa29aa409d0db0d092b7daf98389ff47b9081a4b19fd63779ec59b2207a6f8a6",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1732,
+        "ndcg@10": 0.10116696433381274,
+        "recall@20": 0.2258,
+        "ndcg@20": 0.11443975513354264
+      },
+      "rm_reward@10": 0.6051450371742249,
+      "behavior@10": {
+        "coverage": 0.061715201709858405,
+        "exposure_gini": 0.9929547350610027,
+        "top_1pct_popular_share": 0.7941,
+        "seen_fraction": 0.09408,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17862.53312,
+        "adjacent_user_overlap": 0.3464892978595719
+      },
+      "checkpoint_step": 2500,
+      "source_checkpoint_sha256": "e89cb03473a17ab622cd02db9e54289b70da41fdf68e16e6203b85fa09990d04",
+      "elapsed_seconds": 5.840033238999922
+    }
+  },
+  "test/rl_control_fixed_s2026": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "9b703976dcd017126edd1f1d891f62e2d5aaa1cfae1989c72ca504ee6b60befd",
+    "curated_array_sha256": "151b3185c554eeec0c1bff5f2267d8885e1033fd6bfd4875fd15cd30bfa7baa7",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1728,
+        "ndcg@10": 0.10094168309860505,
+        "recall@20": 0.2256,
+        "ndcg@20": 0.11424535087853023
+      },
+      "rm_reward@10": 0.6058523058891296,
+      "behavior@10": {
+        "coverage": 0.06269480808620537,
+        "exposure_gini": 0.9928956095823315,
+        "top_1pct_popular_share": 0.7921,
+        "seen_fraction": 0.09398,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17806.64676,
+        "adjacent_user_overlap": 0.34440888177635526
+      },
+      "checkpoint_step": 2500,
+      "source_checkpoint_sha256": "0c65ddf397a71739c93182421f27657b57da084e314531e454146b9e405a11e4",
+      "elapsed_seconds": 5.813122362000058
+    }
+  },
+  "test/rerank_0.25": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "ca17d6d8abfb1e56c36124c777bc5720885e64d723937327da3771e7402a1020",
+    "curated_array_sha256": "c4ac918ac0f2df0a115c386ad182b25a2496296b8635777d1c32cced4bc79514",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.175,
+        "ndcg@10": 0.10318550004999834,
+        "recall@20": 0.2276,
+        "ndcg@20": 0.11647637837730551
+      },
+      "rm_reward@10": 0.581412672996521,
+      "behavior@10": {
+        "coverage": 0.06420874521328702,
+        "exposure_gini": 0.9928485492920117,
+        "top_1pct_popular_share": 0.78654,
+        "seen_fraction": 0.08624,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17536.8059,
+        "adjacent_user_overlap": 0.33766753350670137
+      },
+      "checkpoint_step": null,
+      "source_checkpoint_sha256": "10f4781991b1187fcaf7abf68ab2a2437f3787192eb645aa9fa2342ea6479185",
+      "lambda": 0.25,
+      "elapsed_seconds": 1.8203347659998599
+    }
+  },
+  "test/rerank_0.5": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "ad7f43ece44af9e4904f8efc6e8a68f1d454b48b7c134e69ab95336632f9042c",
+    "curated_array_sha256": "d15f9b36a77e27e81c3131df7d40166e5d24a5fdc6b905c4eb9a091a272db3c1",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1752,
+        "ndcg@10": 0.10263546704563928,
+        "recall@20": 0.2266,
+        "ndcg@20": 0.11556261807750047
+      },
+      "rm_reward@10": 0.595373809337616,
+      "behavior@10": {
+        "coverage": 0.06429780033840947,
+        "exposure_gini": 0.9928461554902485,
+        "top_1pct_popular_share": 0.78674,
+        "seen_fraction": 0.0869,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17619.46808,
+        "adjacent_user_overlap": 0.3394478895779156
+      },
+      "checkpoint_step": null,
+      "source_checkpoint_sha256": "10f4781991b1187fcaf7abf68ab2a2437f3787192eb645aa9fa2342ea6479185",
+      "lambda": 0.5,
+      "elapsed_seconds": 1.7094613319998189
+    }
+  },
+  "test/rerank_1.25": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "f85f2aba945eea53ca022b52f78cdf14cd84ec88ea50283bcc97370ff9477de1",
+    "curated_array_sha256": "ab5ae7bca415a809c0ef3229e105edf7d528a6f9569a22e734da3cdc4a48ba9f",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.169,
+        "ndcg@10": 0.09707832325904321,
+        "recall@20": 0.2218,
+        "ndcg@20": 0.11038242735679371
+      },
+      "rm_reward@10": 0.6285400390625,
+      "behavior@10": {
+        "coverage": 0.06314008371181762,
+        "exposure_gini": 0.9929805004898032,
+        "top_1pct_popular_share": 0.78548,
+        "seen_fraction": 0.08858,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 17758.23556,
+        "adjacent_user_overlap": 0.3489097819563912
+      },
+      "checkpoint_step": null,
+      "source_checkpoint_sha256": "10f4781991b1187fcaf7abf68ab2a2437f3787192eb645aa9fa2342ea6479185",
+      "lambda": 1.25,
+      "elapsed_seconds": 1.6267917529999067
+    }
+  },
+  "test/popularity": {
+    "n_users": 5000,
+    "paired_rows_sha256": "fd117c8fbf93035db489864aa0a05022be32622d9e6e3b5e79a6972507e35eae",
+    "source_array_sha256": "e07cf63c4f16a22ed58ef0ee9156734fb272febe81e0ca0fb6497b624bd54724",
+    "curated_array_sha256": "e2022d1ea447e51c749a0a3f333f7e52f3ca5b3fa13ce4e3ca5b52512b71f0ec",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1376,
+        "ndcg@10": 0.07366147281576214,
+        "recall@20": 0.1612,
+        "ndcg@20": 0.07970180066578164
+      },
+      "behavior@10": {
+        "coverage": 0.0008905512512245079,
+        "exposure_gini": 0.9991094487487755,
+        "top_1pct_popular_share": 1.0,
+        "seen_fraction": 0.12806,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 29277.7,
+        "adjacent_user_overlap": 1.0
+      },
+      "elapsed_seconds": 0.047063189000027705
+    }
+  },
+  "validation/sft": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "ad1c5bf770429065ad22f7803421ab61f686bc96617286fb2aa079ec7202ad78",
+    "curated_array_sha256": "ccd30c9382afc3c08145bd1e19d7f948ac9190028b79c43718b802799e02d386",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1986,
+        "ndcg@10": 0.11236274905213864,
+        "recall@20": 0.259,
+        "ndcg@20": 0.12756541327399074
+      },
+      "rm_reward@10": 0.5640934109687805,
+      "behavior@10": {
+        "coverage": 0.0615370914596135,
+        "exposure_gini": 0.9937471333155223,
+        "top_1pct_popular_share": 0.83362,
+        "seen_fraction": 0.07808,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18814.39166,
+        "adjacent_user_overlap": 0.37619523904780955
+      },
+      "synthetic_rollout_5": [
+        {
+          "rm_reward": 0.5776782631874084,
+          "kl": 0.0,
+          "seen_in_initial_context": 0.028599999845027924,
+          "repeat_within_rollout": 0.0
+        },
+        {
+          "rm_reward": 0.5771250128746033,
+          "kl": 0.0,
+          "seen_in_initial_context": 0.02879999950528145,
+          "repeat_within_rollout": 0.009800000116229057
+        },
+        {
+          "rm_reward": 0.5785079002380371,
+          "kl": 0.0,
+          "seen_in_initial_context": 0.025800000876188278,
+          "repeat_within_rollout": 0.017000000923871994
+        },
+        {
+          "rm_reward": 0.5764275789260864,
+          "kl": 0.0,
+          "seen_in_initial_context": 0.023800000548362732,
+          "repeat_within_rollout": 0.02199999988079071
+        },
+        {
+          "rm_reward": 0.5721458792686462,
+          "kl": 0.0,
+          "seen_in_initial_context": 0.023000000044703484,
+          "repeat_within_rollout": 0.027400000020861626
+        }
+      ],
+      "rollout_note": "Sampled recommendations are appended as fictitious interactions; this is not observed user return.",
+      "checkpoint_sha256": "10f4781991b1187fcaf7abf68ab2a2437f3787192eb645aa9fa2342ea6479185",
+      "real_vs_synthetic_context": {
+        "n_users": 234,
+        "note": "Survivor cohort with five eligible real prefixes; not a causal comparison. Ties/OOV can create gaps between eligible targets.",
+        "real_prefixes": [
+          {
+            "rm_reward": 0.5828800201416016,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.017094017937779427
+          },
+          {
+            "rm_reward": 0.6045375466346741,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.021367521956562996
+          },
+          {
+            "rm_reward": 0.5747299790382385,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.03418803587555885
+          },
+          {
+            "rm_reward": 0.6101189255714417,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.021367521956562996
+          },
+          {
+            "rm_reward": 0.5992785692214966,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.025641025975346565
+          }
+        ],
+        "synthetic_prefixes": [
+          {
+            "rm_reward": 0.5828800201416016,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.017094017937779427
+          },
+          {
+            "rm_reward": 0.5943081974983215,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.017094017937779427
+          },
+          {
+            "rm_reward": 0.5792645812034607,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.03418803587555885
+          },
+          {
+            "rm_reward": 0.599041223526001,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.029914529994130135
+          },
+          {
+            "rm_reward": 0.5961718559265137,
+            "kl": 0.0,
+            "seen_in_initial_context": 0.03846153989434242
+          }
+        ]
+      },
+      "checkpoint_step": 45612,
+      "stage": "sft"
+    }
+  },
+  "validation/anchor03_s42": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "531e36fd02ca6cad86ea9a9db9c095216d79563182fbdf3945124558a90db33c",
+    "curated_array_sha256": "b5a90b856924b54827f74987855eeeac4f49b8319fd1878e02a39a5f9b24ccbe",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1984,
+        "ndcg@10": 0.11240878008576369,
+        "recall@20": 0.2596,
+        "ndcg@20": 0.12779378616495793
+      },
+      "rm_reward@10": 0.583793580532074,
+      "behavior@10": {
+        "coverage": 0.06331819396206252,
+        "exposure_gini": 0.993642910321489,
+        "top_1pct_popular_share": 0.833,
+        "seen_fraction": 0.0812,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18868.01946,
+        "adjacent_user_overlap": 0.37499499899979993
+      },
+      "synthetic_rollout_5": [
+        {
+          "rm_reward": 0.5898812413215637,
+          "kl": 0.006871494930237532,
+          "seen_in_initial_context": 0.027799999341368675,
+          "repeat_within_rollout": 0.0
+        },
+        {
+          "rm_reward": 0.5915253162384033,
+          "kl": 0.006571503356099129,
+          "seen_in_initial_context": 0.02979999966919422,
+          "repeat_within_rollout": 0.009399999864399433
+        },
+        {
+          "rm_reward": 0.5893596410751343,
+          "kl": 0.006403275299817324,
+          "seen_in_initial_context": 0.025800000876188278,
+          "repeat_within_rollout": 0.01759999990463257
+        },
+        {
+          "rm_reward": 0.5902454853057861,
+          "kl": 0.006166798993945122,
+          "seen_in_initial_context": 0.023600000888109207,
+          "repeat_within_rollout": 0.020999999716877937
+        },
+        {
+          "rm_reward": 0.5864576101303101,
+          "kl": 0.005992637015879154,
+          "seen_in_initial_context": 0.02160000056028366,
+          "repeat_within_rollout": 0.0272000003606081
+        }
+      ],
+      "rollout_note": "Sampled recommendations are appended as fictitious interactions; this is not observed user return.",
+      "checkpoint_sha256": "edf5dc250a80e0c8a9750058e426d2ad78aba9ddc2379d7a7d2df2a97f426d18",
+      "real_vs_synthetic_context": {
+        "n_users": 234,
+        "note": "Survivor cohort with five eligible real prefixes; not a causal comparison. Ties/OOV can create gaps between eligible targets.",
+        "real_prefixes": [
+          {
+            "rm_reward": 0.5872609615325928,
+            "kl": 0.005454848520457745,
+            "seen_in_initial_context": 0.008547008968889713
+          },
+          {
+            "rm_reward": 0.612977147102356,
+            "kl": 0.005027766805142164,
+            "seen_in_initial_context": 0.025641025975346565
+          },
+          {
+            "rm_reward": 0.5822818875312805,
+            "kl": 0.004662573337554932,
+            "seen_in_initial_context": 0.029914529994130135
+          },
+          {
+            "rm_reward": 0.617125391960144,
+            "kl": 0.004739342723041773,
+            "seen_in_initial_context": 0.025641025975346565
+          },
+          {
+            "rm_reward": 0.604946494102478,
+            "kl": 0.004469237290322781,
+            "seen_in_initial_context": 0.025641025975346565
+          }
+        ],
+        "synthetic_prefixes": [
+          {
+            "rm_reward": 0.5872609615325928,
+            "kl": 0.005454848520457745,
+            "seen_in_initial_context": 0.008547008968889713
+          },
+          {
+            "rm_reward": 0.6156313419342041,
+            "kl": 0.005179623607546091,
+            "seen_in_initial_context": 0.021367521956562996
+          },
+          {
+            "rm_reward": 0.5976325273513794,
+            "kl": 0.0049609034322202206,
+            "seen_in_initial_context": 0.04273504391312599
+          },
+          {
+            "rm_reward": 0.6105596423149109,
+            "kl": 0.004869292955845594,
+            "seen_in_initial_context": 0.03846153989434242
+          },
+          {
+            "rm_reward": 0.6040990948677063,
+            "kl": 0.004531003534793854,
+            "seen_in_initial_context": 0.03846153989434242
+          }
+        ]
+      },
+      "checkpoint_step": 2300,
+      "stage": "rl"
+    }
+  },
+  "validation/anchor03_s123": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "7c79f3fd3bb896d53e93077754fb979d242d4fd5866c6495e99e8d51ca5381ac",
+    "curated_array_sha256": "33888998df836c86bd3c83b7151223ad94982e9dd510df4de66e44c063bb03bc",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1978,
+        "ndcg@10": 0.11247356834121436,
+        "recall@20": 0.2586,
+        "ndcg@20": 0.12778829914157008
+      },
+      "rm_reward@10": 0.5841240286827087,
+      "behavior@10": {
+        "coverage": 0.06331819396206252,
+        "exposure_gini": 0.9936707596402173,
+        "top_1pct_popular_share": 0.83488,
+        "seen_fraction": 0.0813,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18920.92806,
+        "adjacent_user_overlap": 0.3772554510902181
+      },
+      "synthetic_rollout_5": [
+        {
+          "rm_reward": 0.5903424024581909,
+          "kl": 0.0072594922967255116,
+          "seen_in_initial_context": 0.027799999341368675,
+          "repeat_within_rollout": 0.0
+        },
+        {
+          "rm_reward": 0.5922191143035889,
+          "kl": 0.007090617436915636,
+          "seen_in_initial_context": 0.02979999966919422,
+          "repeat_within_rollout": 0.009200000204145908
+        },
+        {
+          "rm_reward": 0.5906203389167786,
+          "kl": 0.006962416227906942,
+          "seen_in_initial_context": 0.025800000876188278,
+          "repeat_within_rollout": 0.01720000058412552
+        },
+        {
+          "rm_reward": 0.5900142192840576,
+          "kl": 0.006732708774507046,
+          "seen_in_initial_context": 0.02319999970495701,
+          "repeat_within_rollout": 0.020999999716877937
+        },
+        {
+          "rm_reward": 0.5873208045959473,
+          "kl": 0.006569274235516787,
+          "seen_in_initial_context": 0.022600000724196434,
+          "repeat_within_rollout": 0.027400000020861626
+        }
+      ],
+      "rollout_note": "Sampled recommendations are appended as fictitious interactions; this is not observed user return.",
+      "checkpoint_sha256": "6e3ed3d90fcea5c9af5b56b7156ff7acd2438f3ac2542a2567070bae878379ee",
+      "real_vs_synthetic_context": {
+        "n_users": 234,
+        "note": "Survivor cohort with five eligible real prefixes; not a causal comparison. Ties/OOV can create gaps between eligible targets.",
+        "real_prefixes": [
+          {
+            "rm_reward": 0.5872004628181458,
+            "kl": 0.005729632917791605,
+            "seen_in_initial_context": 0.012820512987673283
+          },
+          {
+            "rm_reward": 0.6107808947563171,
+            "kl": 0.005402617622166872,
+            "seen_in_initial_context": 0.025641025975346565
+          },
+          {
+            "rm_reward": 0.5824926495552063,
+            "kl": 0.005037154536694288,
+            "seen_in_initial_context": 0.03418803587555885
+          },
+          {
+            "rm_reward": 0.6199395656585693,
+            "kl": 0.005122612230479717,
+            "seen_in_initial_context": 0.029914529994130135
+          },
+          {
+            "rm_reward": 0.6068453788757324,
+            "kl": 0.004910860676318407,
+            "seen_in_initial_context": 0.025641025975346565
+          }
+        ],
+        "synthetic_prefixes": [
+          {
+            "rm_reward": 0.5872004628181458,
+            "kl": 0.005729632917791605,
+            "seen_in_initial_context": 0.012820512987673283
+          },
+          {
+            "rm_reward": 0.6162604689598083,
+            "kl": 0.005558595061302185,
+            "seen_in_initial_context": 0.021367521956562996
+          },
+          {
+            "rm_reward": 0.6008386611938477,
+            "kl": 0.005453906953334808,
+            "seen_in_initial_context": 0.04700854793190956
+          },
+          {
+            "rm_reward": 0.6111235618591309,
+            "kl": 0.005358000751584768,
+            "seen_in_initial_context": 0.03846153989434242
+          },
+          {
+            "rm_reward": 0.6028398275375366,
+            "kl": 0.004985591396689415,
+            "seen_in_initial_context": 0.03846153989434242
+          }
+        ]
+      },
+      "checkpoint_step": 2400,
+      "stage": "rl"
+    }
+  },
+  "validation/anchor03_s2026": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "acb0f5a2130c2cbfa7fc1e00c0f5b47e3daf42a5e7467d2574c30c0f3922a4b6",
+    "curated_array_sha256": "fc837abeed7f72531fbe9350a12bf41354fb4e851aea988b05e07e20a29c3de4",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1986,
+        "ndcg@10": 0.11238647671511767,
+        "recall@20": 0.2578,
+        "ndcg@20": 0.12731497540780573
+      },
+      "rm_reward@10": 0.5783549547195435,
+      "behavior@10": {
+        "coverage": 0.06216047733547066,
+        "exposure_gini": 0.9937369703446434,
+        "top_1pct_popular_share": 0.83508,
+        "seen_fraction": 0.08098,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18928.7866,
+        "adjacent_user_overlap": 0.37705541108221646
+      },
+      "synthetic_rollout_5": [
+        {
+          "rm_reward": 0.5865950584411621,
+          "kl": 0.004515369422733784,
+          "seen_in_initial_context": 0.0284000001847744,
+          "repeat_within_rollout": 0.0
+        },
+        {
+          "rm_reward": 0.5882630944252014,
+          "kl": 0.004335707053542137,
+          "seen_in_initial_context": 0.029400000348687172,
+          "repeat_within_rollout": 0.009399999864399433
+        },
+        {
+          "rm_reward": 0.5863228440284729,
+          "kl": 0.004181621130555868,
+          "seen_in_initial_context": 0.026000000536441803,
+          "repeat_within_rollout": 0.01759999990463257
+        },
+        {
+          "rm_reward": 0.5863891243934631,
+          "kl": 0.004027990624308586,
+          "seen_in_initial_context": 0.023800000548362732,
+          "repeat_within_rollout": 0.021199999377131462
+        },
+        {
+          "rm_reward": 0.5823109149932861,
+          "kl": 0.003897903487086296,
+          "seen_in_initial_context": 0.021400000900030136,
+          "repeat_within_rollout": 0.027000000700354576
+        }
+      ],
+      "rollout_note": "Sampled recommendations are appended as fictitious interactions; this is not observed user return.",
+      "checkpoint_sha256": "628f35137c14e19c4dd1ab13b85c4d86d944eddac0d35a849d2e1a4ae9d0c112",
+      "real_vs_synthetic_context": {
+        "n_users": 234,
+        "note": "Survivor cohort with five eligible real prefixes; not a causal comparison. Ties/OOV can create gaps between eligible targets.",
+        "real_prefixes": [
+          {
+            "rm_reward": 0.5866162180900574,
+            "kl": 0.0036632930859923363,
+            "seen_in_initial_context": 0.012820512987673283
+          },
+          {
+            "rm_reward": 0.609681248664856,
+            "kl": 0.0033579999580979347,
+            "seen_in_initial_context": 0.021367521956562996
+          },
+          {
+            "rm_reward": 0.5828474164009094,
+            "kl": 0.0031657249201089144,
+            "seen_in_initial_context": 0.03846153989434242
+          },
+          {
+            "rm_reward": 0.6132932305335999,
+            "kl": 0.003210119903087616,
+            "seen_in_initial_context": 0.025641025975346565
+          },
+          {
+            "rm_reward": 0.6025731563568115,
+            "kl": 0.00306696817278862,
+            "seen_in_initial_context": 0.025641025975346565
+          }
+        ],
+        "synthetic_prefixes": [
+          {
+            "rm_reward": 0.5866162180900574,
+            "kl": 0.0036632930859923363,
+            "seen_in_initial_context": 0.012820512987673283
+          },
+          {
+            "rm_reward": 0.6091611385345459,
+            "kl": 0.0034820656292140484,
+            "seen_in_initial_context": 0.021367521956562996
+          },
+          {
+            "rm_reward": 0.5918910503387451,
+            "kl": 0.0033567077480256557,
+            "seen_in_initial_context": 0.04700854793190956
+          },
+          {
+            "rm_reward": 0.6107609868049622,
+            "kl": 0.003282375168055296,
+            "seen_in_initial_context": 0.03846153989434242
+          },
+          {
+            "rm_reward": 0.6007843017578125,
+            "kl": 0.003034119261428714,
+            "seen_in_initial_context": 0.03846153989434242
+          }
+        ]
+      },
+      "checkpoint_step": 1500,
+      "stage": "rl"
+    }
+  },
+  "validation/anchor03_s42_floor_0990": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "4a93e929b6d7b5c9670ed299d4f2ca1650b7c7fb3e32f34e93cabd082b2b8048",
+    "curated_array_sha256": "0d0514e3b1c79fadac9ec2539f622e6db7c3450ed775a739473e04c599897b91",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.198,
+        "ndcg@10": 0.11200711732122777,
+        "recall@20": 0.2592,
+        "ndcg@20": 0.12740898016165786
+      },
+      "rm_reward@10": 0.5848139524459839,
+      "behavior@10": {
+        "coverage": 0.06305102858669516,
+        "exposure_gini": 0.9936939745302342,
+        "top_1pct_popular_share": 0.83454,
+        "seen_fraction": 0.0813,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18916.38878,
+        "adjacent_user_overlap": 0.37701540308061615
+      },
+      "checkpoint_sha256": "325305c7751ca8e52e1623a4a95e037bf713b4cb4b9b583654eefdc2eac20a36",
+      "checkpoint_step": 2500,
+      "stage": "rl"
+    }
+  },
+  "validation/anchor03_s123_floor_0990": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "9e67cab3b2771e53613d0b1c7ad1e7f283b7d15a076bfb3286bb8d70473dcc77",
+    "curated_array_sha256": "fb1e45c45986e6a0e4336543ff80b954a01be89cb1c9d141ae395d2de3f51f49",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.198,
+        "ndcg@10": 0.1123594671999303,
+        "recall@20": 0.258,
+        "ndcg@20": 0.12748795423061862
+      },
+      "rm_reward@10": 0.5843315720558167,
+      "behavior@10": {
+        "coverage": 0.06314008371181762,
+        "exposure_gini": 0.9936981993053701,
+        "top_1pct_popular_share": 0.83514,
+        "seen_fraction": 0.08124,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18935.26654,
+        "adjacent_user_overlap": 0.37727545509101823
+      },
+      "checkpoint_sha256": "5fb1ff82e30fc5031be1f02859f163e94acf1920c91cd7bd2690abcf3579f775",
+      "checkpoint_step": 2500,
+      "stage": "rl"
+    }
+  },
+  "validation/anchor03_s2026_floor_0990": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "a840b01e532d160adc41cdc16db16f3640964d4c0e49c09824dd4b79a9ffbaf9",
+    "curated_array_sha256": "2065ecdc6f3737f017070968aed04ce92f9c51f8f48b248d393e44b42cc2f268",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1978,
+        "ndcg@10": 0.11176425282309596,
+        "recall@20": 0.2576,
+        "ndcg@20": 0.1268597446674524
+      },
+      "rm_reward@10": 0.5847501754760742,
+      "behavior@10": {
+        "coverage": 0.06224953246059311,
+        "exposure_gini": 0.9937019075607801,
+        "top_1pct_popular_share": 0.83488,
+        "seen_fraction": 0.0811,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18914.13862,
+        "adjacent_user_overlap": 0.3759751950390078
+      },
+      "checkpoint_sha256": "783021629cbfeb551144fe98f327ca09c25251bc856032283ced33a56b361226",
+      "checkpoint_step": 2500,
+      "stage": "rl"
+    }
+  },
+  "validation/anchor10_s42_last": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "c2b213ddda04ecb2591973f504706de522073f061e2d4c9cfdc94a14df4f07f4",
+    "curated_array_sha256": "c005b527aff27d519af9d6be7a1008a15c611b4f87f3e0128e6359039fc8d609",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.198,
+        "ndcg@10": 0.11313315737385705,
+        "recall@20": 0.2618,
+        "ndcg@20": 0.12916406528837998
+      },
+      "rm_reward@10": 0.5704757571220398,
+      "behavior@10": {
+        "coverage": 0.06340724908718497,
+        "exposure_gini": 0.9937412912993143,
+        "top_1pct_popular_share": 0.83302,
+        "seen_fraction": 0.07802,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18803.30978,
+        "adjacent_user_overlap": 0.37521504300860176
+      },
+      "checkpoint_sha256": "a889d870248012c8ffec0e6b9be472494b6e0265448d4b9d4d811d6b4df57227",
+      "checkpoint_step": 2500,
+      "stage": "rl"
+    }
+  },
+  "validation/anchor10_s123_last": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "6a15b0b5e93d4665680668f193bec446dd3afe5df364fc8e76b03758d6365b1e",
+    "curated_array_sha256": "f3c62998fb3a8758cbed35d0520fe79a1dc83393b0c62f0a2c6d0652eecd5e7b",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1984,
+        "ndcg@10": 0.11283359487785734,
+        "recall@20": 0.2606,
+        "ndcg@20": 0.12848232395935824
+      },
+      "rm_reward@10": 0.570534348487854,
+      "behavior@10": {
+        "coverage": 0.06287291833645026,
+        "exposure_gini": 0.9937584860628729,
+        "top_1pct_popular_share": 0.83388,
+        "seen_fraction": 0.07818,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18830.64102,
+        "adjacent_user_overlap": 0.37573514702940586
+      },
+      "checkpoint_sha256": "a6d2fc058e86f8d3775184cf329689c188724a81046641edd1f140dc277e094e",
+      "checkpoint_step": 2500,
+      "stage": "rl"
+    }
+  },
+  "validation/anchor10_s2026": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "9abdfe4967c0491c5a6fcc2f3d85ee151706ec3ecdb27e5b73e84e09fdc1d2ef",
+    "curated_array_sha256": "c3ca7b01ba2f817c1fea4a476c0cee5d8c00a66ab2645142a60114bc82eb75df",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1986,
+        "ndcg@10": 0.11262561866080098,
+        "recall@20": 0.261,
+        "ndcg@20": 0.12830538265879812
+      },
+      "rm_reward@10": 0.5706577897071838,
+      "behavior@10": {
+        "coverage": 0.06224953246059311,
+        "exposure_gini": 0.9937676623029655,
+        "top_1pct_popular_share": 0.83442,
+        "seen_fraction": 0.07818,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18848.30202,
+        "adjacent_user_overlap": 0.3758351670334067
+      },
+      "synthetic_rollout_5": [
+        {
+          "rm_reward": 0.5810068845748901,
+          "kl": 0.0034645062405616045,
+          "seen_in_initial_context": 0.0272000003606081,
+          "repeat_within_rollout": 0.0
+        },
+        {
+          "rm_reward": 0.5838245153427124,
+          "kl": 0.0031786353792995214,
+          "seen_in_initial_context": 0.028999999165534973,
+          "repeat_within_rollout": 0.009600000455975533
+        },
+        {
+          "rm_reward": 0.5833961367607117,
+          "kl": 0.0031286636367440224,
+          "seen_in_initial_context": 0.026399999856948853,
+          "repeat_within_rollout": 0.017400000244379044
+        },
+        {
+          "rm_reward": 0.5824884176254272,
+          "kl": 0.0030740725342184305,
+          "seen_in_initial_context": 0.023600000888109207,
+          "repeat_within_rollout": 0.020800000056624413
+        },
+        {
+          "rm_reward": 0.5776282548904419,
+          "kl": 0.0030363742262125015,
+          "seen_in_initial_context": 0.021800000220537186,
+          "repeat_within_rollout": 0.02500000037252903
+        }
+      ],
+      "rollout_note": "Sampled recommendations are appended as fictitious interactions; this is not observed user return.",
+      "checkpoint_sha256": "cc59bce733b048821a49280da3e938d14359a6565e6c99a2bd4f3caea7611830",
+      "real_vs_synthetic_context": {
+        "n_users": 234,
+        "note": "Survivor cohort with five eligible real prefixes; not a causal comparison. Ties/OOV can create gaps between eligible targets.",
+        "real_prefixes": [
+          {
+            "rm_reward": 0.5837417840957642,
+            "kl": 0.0032874636817723513,
+            "seen_in_initial_context": 0.017094017937779427
+          },
+          {
+            "rm_reward": 0.6089143753051758,
+            "kl": 0.0029972826596349478,
+            "seen_in_initial_context": 0.025641025975346565
+          },
+          {
+            "rm_reward": 0.5807909965515137,
+            "kl": 0.0030517526902258396,
+            "seen_in_initial_context": 0.03418803587555885
+          },
+          {
+            "rm_reward": 0.6141613125801086,
+            "kl": 0.003185527166351676,
+            "seen_in_initial_context": 0.021367521956562996
+          },
+          {
+            "rm_reward": 0.5997269749641418,
+            "kl": 0.0031851311214268208,
+            "seen_in_initial_context": 0.025641025975346565
+          }
+        ],
+        "synthetic_prefixes": [
+          {
+            "rm_reward": 0.5837417840957642,
+            "kl": 0.0032874636817723513,
+            "seen_in_initial_context": 0.017094017937779427
+          },
+          {
+            "rm_reward": 0.6044447422027588,
+            "kl": 0.002929689595475793,
+            "seen_in_initial_context": 0.021367521956562996
+          },
+          {
+            "rm_reward": 0.5857357382774353,
+            "kl": 0.0028435278218239546,
+            "seen_in_initial_context": 0.03846153989434242
+          },
+          {
+            "rm_reward": 0.602260410785675,
+            "kl": 0.0029329475946724415,
+            "seen_in_initial_context": 0.03846153989434242
+          },
+          {
+            "rm_reward": 0.5931430459022522,
+            "kl": 0.0028176952619105577,
+            "seen_in_initial_context": 0.03846153989434242
+          }
+        ]
+      },
+      "checkpoint_step": 2500,
+      "stage": "rl"
+    }
+  },
+  "validation/control_s42_floor_0950": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "bff5984391f72ad6bb1fdb07ec6f3ce722394817f65dea2e7f0561a1b95e0a55",
+    "curated_array_sha256": "e394bd654eeb96510c7facd5d6ad9568af0228267f51b8cf142813b673026557",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1948,
+        "ndcg@10": 0.10936555599960743,
+        "recall@20": 0.2546,
+        "ndcg@20": 0.12444406047442647
+      },
+      "rm_reward@10": 0.6044354438781738,
+      "behavior@10": {
+        "coverage": 0.05966693383204203,
+        "exposure_gini": 0.993846547332799,
+        "top_1pct_popular_share": 0.83812,
+        "seen_fraction": 0.0867,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 19101.7062,
+        "adjacent_user_overlap": 0.3851770354070814
+      },
+      "checkpoint_sha256": "0650704070b6f3a727077f409f071b9f607b9cf109da89b5ccd036cb619bb41b",
+      "checkpoint_step": 2500,
+      "stage": "rl"
+    }
+  },
+  "validation/control_s123_floor_0950": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "1f608174450c428bb6b728994fb36fb9c74a53460fc2e28b89440ede60c88cc3",
+    "curated_array_sha256": "374e93fe8bf358619128d62f879c2f919788b03ecc1cedd78223829eca3765b6",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.195,
+        "ndcg@10": 0.10975728407811203,
+        "recall@20": 0.2548,
+        "ndcg@20": 0.12484718911304822
+      },
+      "rm_reward@10": 0.6036891341209412,
+      "behavior@10": {
+        "coverage": 0.06020126458277674,
+        "exposure_gini": 0.9938150930626057,
+        "top_1pct_popular_share": 0.83872,
+        "seen_fraction": 0.08712,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 19134.4554,
+        "adjacent_user_overlap": 0.3845969193838768
+      },
+      "checkpoint_sha256": "1dd419ee2bfe26af36295507fe79a11e5684ad88dacbdc0cdd170bb801aabbf3",
+      "checkpoint_step": 2500,
+      "stage": "rl"
+    }
+  },
+  "validation/control_s2026_floor_0950": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "d0ddc335a299bccb72b615e2afae69846cf4b2e1408f2f990920be790e51350a",
+    "curated_array_sha256": "54ae72138afd9028caaa7935e66ad99e270580029e557e3fd2971579ea58ad91",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1946,
+        "ndcg@10": 0.10957096932886698,
+        "recall@20": 0.2554,
+        "ndcg@20": 0.12490773471885587
+      },
+      "rm_reward@10": 0.6047499179840088,
+      "behavior@10": {
+        "coverage": 0.060824650458633896,
+        "exposure_gini": 0.9937816653308398,
+        "top_1pct_popular_share": 0.83752,
+        "seen_fraction": 0.0874,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 19113.00052,
+        "adjacent_user_overlap": 0.3839167833566713
+      },
+      "checkpoint_sha256": "e3119abefb1c620a1b2975fb4b7c2c18e025a8d92851ab1a62a157b433364eb1",
+      "checkpoint_step": 2500,
+      "stage": "rl"
+    }
+  },
+  "validation/rerank_0.25": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "6171e23a35f1bac904f08df56a7b9087af8c14c135e585190e0937379be39558",
+    "curated_array_sha256": "773b09e8a5e9ab395148a44b1c20bf7eb130845acca7be6ccd54cb41179d6406",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.1968,
+        "ndcg@10": 0.11138731928646987,
+        "recall@20": 0.2586,
+        "ndcg@20": 0.12699005203050925
+      },
+      "rm_reward@10": 0.5781751871109009,
+      "behavior@10": {
+        "coverage": 0.06144803633449105,
+        "exposure_gini": 0.9937205450173657,
+        "top_1pct_popular_share": 0.83316,
+        "seen_fraction": 0.07982,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18886.35386,
+        "adjacent_user_overlap": 0.3769553910782157
+      },
+      "lambda": 0.25,
+      "checkpoint_sha256": "10f4781991b1187fcaf7abf68ab2a2437f3787192eb645aa9fa2342ea6479185"
+    }
+  },
+  "validation/rerank_0.5": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "4bbe6574afd152a1cfb4342c7f8ca49955cbc15719455ad4606773fe7cf5d991",
+    "curated_array_sha256": "52dd52ec9f417ba7f0e4725455823eaa52c08800aed12d46e9166e216fd9cee7",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.195,
+        "ndcg@10": 0.11085124138063643,
+        "recall@20": 0.2568,
+        "ndcg@20": 0.12648461581214474
+      },
+      "rm_reward@10": 0.5923985838890076,
+      "behavior@10": {
+        "coverage": 0.0615370914596135,
+        "exposure_gini": 0.9937048677531392,
+        "top_1pct_popular_share": 0.83298,
+        "seen_fraction": 0.08068,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 18941.5777,
+        "adjacent_user_overlap": 0.37913582716543315
+      },
+      "lambda": 0.5,
+      "checkpoint_sha256": "10f4781991b1187fcaf7abf68ab2a2437f3787192eb645aa9fa2342ea6479185"
+    }
+  },
+  "validation/rerank_1.25": {
+    "n_users": 5000,
+    "paired_rows_sha256": "07231e7b1ab07ff412f27b59a4602500453ea1a9d1c03ee4a3856fae811e8ca0",
+    "source_array_sha256": "896fd7862cbee25faa2dee949e708ac60250de8335616b96491c3e1617563fb3",
+    "curated_array_sha256": "536619802b8f24c8f051a2142bed295193bfc1bae5a8d8013b0b6113b52d4118",
+    "metrics": {
+      "ranking": {
+        "recall@10": 0.192,
+        "ndcg@10": 0.10724410627417738,
+        "recall@20": 0.2518,
+        "ndcg@20": 0.12231177427408134
+      },
+      "rm_reward@10": 0.6270107626914978,
+      "behavior@10": {
+        "coverage": 0.06037937483302164,
+        "exposure_gini": 0.9938336165286312,
+        "top_1pct_popular_share": 0.83226,
+        "seen_fraction": 0.08236,
+        "within_list_repeat_fraction": 0.0,
+        "mean_train_popularity": 19044.94092,
+        "adjacent_user_overlap": 0.38813762752550507
+      },
+      "lambda": 1.25,
+      "checkpoint_sha256": "10f4781991b1187fcaf7abf68ab2a2437f3787192eb645aa9fa2342ea6479185"
+    }
+  }
+}

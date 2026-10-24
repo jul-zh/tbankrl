@@ -1,0 +1,109 @@
+{
+  "archive_sha256": "b2ae47444590d35d2d36cb8544e66cb69308b8423e5d48f3fc9294d3839a77c6",
+  "selection_sha256": "7cf30692b25835880f4b4113b9c4efd6cbd23540bacdd7bef6b6d4a81c5294ce",
+  "split": "test",
+  "n_users": 5000,
+  "evaluated_models": 18,
+  "primary_complete": true,
+  "available_models_complete": true,
+  "checked_bootstrap_intervals": 84,
+  "current_evaluation_code_matches_export": true,
+  "same_users_targets_and_catalog_for_all_models": true,
+  "ranking_recomputed": true,
+  "test_arrays_differ_from_validation": true,
+  "frozen_selection_unchanged": true,
+  "primary_reward_gain_pct_mean": 3.0822251239332723,
+  "primary_reward_gain_pct_std": 0.5211415302923007,
+  "primary_mean_ndcg": 0.1037587022058371,
+  "primary_ndcg_change_pct": -0.7831575916736888,
+  "primary_paired_vs_sft_after_seed_average": {
+    "ndcg@10": {
+      "mean_delta": -0.000819008278859434,
+      "ci95": [
+        -0.0020939373971864024,
+        0.000522583725873935
+      ]
+    },
+    "recall@10": {
+      "mean_delta": -0.0008000000000000004,
+      "ci95": [
+        -0.0029333333333333334,
+        0.0013333333333333329
+      ]
+    },
+    "rm_reward@10": {
+      "mean_delta": 0.017485479682683946,
+      "ci95": [
+        0.01674042352631688,
+        0.018221025198549033
+      ]
+    }
+  },
+  "additional_contrasts": {
+    "rl_ce03_selected_s42_vs_rerank025": {
+      "ndcg@10": {
+        "mean_delta": 0.0003541812364864866,
+        "ci95": [
+          -0.0007908318567832283,
+          0.001440480747114012
+        ]
+      },
+      "rm_reward@10": {
+        "mean_delta": 0.004861950314044953,
+        "ci95": [
+          0.004278095078319311,
+          0.005398574370592832
+        ]
+      }
+    },
+    "rl_ce03_selected_s123_vs_rerank025": {
+      "ndcg@10": {
+        "mean_delta": 0.00035734106630778604,
+        "ci95": [
+          -0.0008329082387811603,
+          0.0016737707516195262
+        ]
+      },
+      "rm_reward@10": {
+        "mean_delta": 0.005293327265977859,
+        "ci95": [
+          0.004757229404300452,
+          0.005854757262915372
+        ]
+      }
+    },
+    "rl_ce03_selected_s2026_vs_rerank025": {
+      "ndcg@10": {
+        "mean_delta": 0.0010080841647220192,
+        "ci95": [
+          1.0361616685133832e-05,
+          0.001984892640358022
+        ]
+      },
+      "rm_reward@10": {
+        "mean_delta": -2.940535545349121e-05,
+        "ci95": [
+          -0.000542731750458479,
+          0.00046135836020112016
+        ]
+      }
+    },
+    "fixed_rl_vs_ce_seed42": {
+      "ndcg@10": {
+        "mean_delta": -0.0024102992485235523,
+        "ci95": [
+          -0.0038490515417025886,
+          -0.0010015441867603867
+        ]
+      },
+      "rm_reward@10": {
+        "mean_delta": 0.021885469621419906,
+        "ci95": [
+          0.02105156040683389,
+          0.02274123215958476
+        ]
+      }
+    }
+  },
+  "note": "Audit uses exported arrays and metadata, without loading model weights or original prepared data. Bootstrap is conditional on frozen policies and shared users; it does not resample training or selection."
+}

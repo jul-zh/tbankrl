@@ -1,0 +1,27 @@
+{
+  "format_version": 1,
+  "seed": 42,
+  "overall_minutes": 230,
+  "evaluation_reserve_minutes": 15,
+  "checkpoint_minutes": 2,
+  "data": {"max_users": 150000, "max_added_examples": 1500000},
+  "pilot_steps": 50,
+  "training": {
+    "batch_size": 64,
+    "learning_rate": 0.0003,
+    "min_lr_ratio": 0.1,
+    "warmup_passes": 0.25,
+    "max_passes": 12,
+    "eval_passes": 0.5,
+    "patience": 4,
+    "min_delta": 0.0001,
+    "max_minutes": 45,
+    "eval_batch_size": 64,
+    "train_probe_examples": 1000
+  },
+  "branches": [
+    {"name": "small_128", "dataset": "small", "model": {"hidden": 128, "layers": 2, "heads": 4, "dropout": 0.1}},
+    {"name": "large_128", "dataset": "large", "model": {"hidden": 128, "layers": 2, "heads": 4, "dropout": 0.1}},
+    {"name": "large_256", "dataset": "large", "model": {"hidden": 256, "layers": 2, "heads": 4, "dropout": 0.1}}
+  ]
+}

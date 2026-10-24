@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tbank-rl-recsys"
+version = "0.1.0"
+description = "Budget-conscious offline RL experiments for sequential recommendation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3"]
+
+[project.optional-dependencies]
+train = ["torch>=2.5,<3", "transformers==4.46.3", "matplotlib>=3.8,<4"]
+test = ["pytest>=7.4,<9", "nbformat>=5.9,<6", "matplotlib>=3.8,<4"]
+
+[project.scripts]
+recsys = "recsys.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

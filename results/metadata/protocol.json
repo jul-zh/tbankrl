@@ -1,0 +1,36 @@
+{
+  "format_version": 1,
+  "source": {
+    "repository": "https://github.com/irsafilo/KION_DATASET",
+    "revision": "f69775be31fa5779907cf0a92ddedb70037fb5ae",
+    "file": "interactions.csv"
+  },
+  "source_csv_sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf",
+  "t1": "2021-07-21 00:00:00+00:00",
+  "t2": "2021-08-06 00:00:00+00:00",
+  "vocab_size": 11232,
+  "selected_users": 150000,
+  "train_users_before_selection": 708008,
+  "examples": {
+    "train": 648685,
+    "validation": 5000,
+    "test": 5000
+  },
+  "protocol": "first eligible warm singleton target per evaluation user; strict past; tied history becomes UNK",
+  "temporal_semantics": "last-observed-date ordered-row proxy; not a verified viewing-event stream",
+  "real_prefix_cohort_users": {
+    "validation": 234,
+    "test": 192
+  },
+  "file_sha256": {
+    "item_rewards.npy": "d7f2074e7595e835f490316b7af3b9bf48d74bec351f6df6126e010dffb4f7ea",
+    "popularity.npy": "2ee63be1aa344f511ce3e032e7c7cebbcc6b4ed8bc1b1c758158ad9c9ad12d4d",
+    "selected_users.npy": "5f7c9f61ddb4e7f3bb5c0688689f6e7b6b41b7c8f662de0c950fe51d1f7ae90e",
+    "test.npz": "7fed3330c70d003ef7e68e41b2107850a76b423929280ab251a31ebe0ad75c19",
+    "test_real_prefixes.npz": "f3d52de039ea87aba44c7c138970e10290c418a1df26881d289137c2c2be5bf6",
+    "train.npz": "a3660cd858bb2e00472d2fed98e73d7793211ee7ba05fa0b36af8c649fdfbe3f",
+    "validation.npz": "accbbffc2cec0304539110edab556d2f499f2322fb82deda3d270198e7f917dd",
+    "validation_real_prefixes.npz": "1f737c07f446f06edcde6c44b065a3b4cdac72be1aac58a5710ec304d0bdce6c",
+    "vocab.json": "c5db0fd6df81f0e53a68ff1f4d2d07022e22018fa5ad4cb48559e4fe23b763ce"
+  }
+}

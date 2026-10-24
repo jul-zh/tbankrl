@@ -1,0 +1,18 @@
+{
+  "evaluation_code_sha256": "cc4073efc08d500763cab5718948851fc4314a452873e45ce23ecd16549069fd",
+  "source_identity": {
+    "manifest_sha256": "30b330a02e6a26299f3dbda7a7bad18a8d0b914432d4287c253666ce0b389c3c",
+    "sft_sha256": "10f4781991b1187fcaf7abf68ab2a2437f3787192eb645aa9fa2342ea6479185",
+    "rm_sha256": "6599a8ebb3b3318310373892ff2ab1b3e71a5418f1b343b47419f40e47ae69c8",
+    "reward_source_manifest_sha256": "2c202a2ca07688c12648adbe43fbec8c1ab7a45ea193740357af836904afae34"
+  },
+  "published_selection_sha256": "7cf30692b25835880f4b4113b9c4efd6cbd23540bacdd7bef6b6d4a81c5294ce",
+  "archives_sha256": {
+    "results_final_test_v1.zip": "b2ae47444590d35d2d36cb8544e66cb69308b8423e5d48f3fc9294d3839a77c6",
+    "results_rl_preserve_v1.zip": "d22bc11ba1ba41e810718d112be4fbc68a3dbe92f7a7f47cb946d5b7b21411fd",
+    "results_scaling_v1.zip": "fe8bf702272dcb0aab574064212613a80fc8ef166bf56d8d069d4116d60af113",
+    "results_rl_ablation_v1.zip": "b7d860626cc69d88f5f324c1358a09a3bb37803801f8afc716ad9a32e176a09c",
+    "results_rl_mods_v1.zip": "8597e4292cb63304461cbcbbb88f77c0f2142cc4749af5567416ad3c8063d376"
+  },
+  "export_note": "Metric arrays retain paired row order but omit original user/item IDs, contexts, target feedback and recommendation IDs."
+}
